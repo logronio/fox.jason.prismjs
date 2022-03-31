@@ -23,7 +23,7 @@
     </xsl:copy>
   </xsl:template>
 
-   <xsl:template match="codeph|codeblock">
+   <xsl:template match="codeph[contains(@outputclass,'language-') or ancestor::body[contains(@outputclass,'language-')]] | codeblock[contains(@outputclass,'language-') or ancestor::body[contains(@outputclass,'language-')]] ">
     <xsl:variable name="prismId" select="generate-id()"/>
     <xsl:variable name="prismjsfile" select="string-join(( $CODE_DEST, concat($prismId,'.xml')), '/')"/>
     <xsl:variable name="prismjslang" select="string-join(( $CODE_DEST, concat($prismId,'.txt')), '/')"/>
