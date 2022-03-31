@@ -35,6 +35,7 @@
         <!-- add any additional missing transtypes here -->
         <contains string="${transtype}" substring="HTML" casesensitive="no"/>
         <contains string="${transtype}" substring="PDF" casesensitive="no"/>
+      	<contains string="${transtype}" substring="WEBHELP" casesensitive="no"/>
         <contains
           string="${transtype}"
           substring="eclipsehelp"
