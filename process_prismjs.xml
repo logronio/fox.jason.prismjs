@@ -159,6 +159,7 @@
         <excludes format="image"/>
       </ditafileset>
       <and>
+        <contains text="outputclass=&quot;language-"/>
         <or>
           <contains text="&lt;codeph"/>
           <contains text="&lt;codeblock"/>
